@@ -1,0 +1,15 @@
+# Godot's generated import cache and editor state.
+.godot/
+*.import
+
+# Native build intermediates; the distributable DLLs are versioned.
+*.obj
+*.o
+*.exp
+*.lib
+*.pdb
+.sconsign.dblite
+
+# Operating system metadata.
+.DS_Store
+Thumbs.db

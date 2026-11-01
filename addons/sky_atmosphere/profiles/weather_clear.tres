@@ -1,0 +1,14 @@
+[gd_resource type="SkyCycleProfile" format=3]
+
+[sub_resource type="Curve" id="Curve_0lksd"]
+_data = [Vector2(0, 0.12), 0.0, 0.0, 1, 0, Vector2(1, 0.12), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_6g2cj"]
+_limits = [0.0, 0.01, 0.0, 1.0]
+_data = [Vector2(0, 5e-05), 0.0, 0.0, 1, 0, Vector2(1, 5e-05), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+clouds_coverage = SubResource("Curve_0lksd")
+fog_density = SubResource("Curve_6g2cj")

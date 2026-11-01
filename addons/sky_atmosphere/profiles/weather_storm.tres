@@ -1,0 +1,29 @@
+[gd_resource type="SkyCycleProfile" format=3]
+
+[sub_resource type="Curve" id="Curve_funtd"]
+_data = [Vector2(0, 0.95), 0.0, 0.0, 1, 0, Vector2(1, 0.95), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_d4r60"]
+_limits = [0.0, 50.0, 0.0, 1.0]
+_data = [Vector2(0, 25), 0.0, 0.0, 1, 0, Vector2(1, 25), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_822tl"]
+colors = PackedColorArray(0.3, 0.33, 0.37, 1, 0.3, 0.33, 0.37, 1)
+
+[sub_resource type="Curve" id="Curve_25veh"]
+_limits = [0.0, 0.01, 0.0, 1.0]
+_data = [Vector2(0, 0.0015), 0.0, 0.0, 1, 0, Vector2(1, 0.0015), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_vedgi"]
+_data = [Vector2(0, 1), 0.0, 0.0, 1, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+clouds_coverage = SubResource("Curve_funtd")
+clouds_wind_speed = SubResource("Curve_d4r60")
+storm = SubResource("Curve_vedgi")
+fog_density = SubResource("Curve_25veh")
+fog_color = SubResource("Gradient_822tl")

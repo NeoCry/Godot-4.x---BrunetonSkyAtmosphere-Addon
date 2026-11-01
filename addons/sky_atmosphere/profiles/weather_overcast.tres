@@ -1,0 +1,25 @@
+[gd_resource type="SkyCycleProfile" format=3]
+
+[sub_resource type="Curve" id="Curve_himfx"]
+_data = [Vector2(0, 0.85), 0.0, 0.0, 1, 0, Vector2(1, 0.85), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_pp37a"]
+_limits = [0.0, 4.0, 0.0, 1.0]
+_data = [Vector2(0, 1.5), 0.0, 0.0, 1, 0, Vector2(1, 1.5), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_wwp32"]
+_limits = [0.0, 0.01, 0.0, 1.0]
+_data = [Vector2(0, 0.0006), 0.0, 0.0, 1, 0, Vector2(1, 0.0006), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_2sq0e"]
+_data = [Vector2(0, 0.35), 0.0, 0.0, 1, 0, Vector2(1, 0.35), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[resource]
+clouds_coverage = SubResource("Curve_himfx")
+clouds_density = SubResource("Curve_pp37a")
+storm = SubResource("Curve_2sq0e")
+fog_density = SubResource("Curve_wwp32")
